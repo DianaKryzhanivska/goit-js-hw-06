@@ -10,9 +10,9 @@
 */
 
 const formEl = document.querySelector(".login-form");
-formEl.addEventListener("submit", handleSubmit);
+formEl.addEventListener("submit", onFormSubmit);
 
-function handleSubmit(event) {
+function onFormSubmit(event) {
   event.preventDefault();
   const {
     elements: { email, password },
