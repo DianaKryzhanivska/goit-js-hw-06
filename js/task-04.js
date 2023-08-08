@@ -14,7 +14,6 @@
 */
 
 const counterValue = document.querySelector("#value");
-console.dir(counterValue);
 
 const buttonMinus = document.querySelector('[data-action="decrement"]');
 const buttonPlus = document.querySelector('[data-action="increment"]');

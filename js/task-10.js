@@ -43,8 +43,6 @@ function createBoxes() {
     box.style.backgroundColor = randomHexColor;
 
     refs.container.append(box);
-
-    console.log(refs.container);
   }
 }
 

@@ -27,4 +27,3 @@ for (let i = 0; i < ingredients.length; i++) {
 
   ingredientsListEl.appendChild(itemEl);
 }
-console.log(ingredientsListEl);

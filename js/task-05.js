@@ -12,8 +12,6 @@ const refs = {
 refs.input.addEventListener("input", onInputChange);
 
 function onInputChange(event) {
-  if (!refs.input) {
-    refs.nameAppeal.textContent = `Hello, Anonymous`;
-  }
-  refs.nameAppeal.textContent = event.currentTarget.value;
+  const userName = event.target.value;
+  refs.nameAppeal.textContent = userName || `Anonymous`;
 }

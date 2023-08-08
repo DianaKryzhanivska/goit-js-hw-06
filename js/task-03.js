@@ -31,4 +31,3 @@ const markup = images.map(
 );
 
 galleryEl.insertAdjacentHTML("beforeend", markup);
-console.log(galleryEl);

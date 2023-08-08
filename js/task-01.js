@@ -24,11 +24,11 @@ Elements: 5
 const categoriesEl = document.querySelector("#categories");
 console.log(`Number of categories: ${categoriesEl.children.length}`);
 
-//-----------------------------------------------------------------
-
 const sectionEl = [...categoriesEl.children];
+
 sectionEl.forEach((element) => {
   const titleEl = element.querySelector("h2").textContent;
-  const quantityOfItemsEl = element.querySelector(".list").children.length;
-  console.log(`Category:  ${titleEl}, Elements: ${quantityOfItemsEl}`);
+  const quantityOfItemsEl = element.querySelectorAll("li");
+
+  console.log(`Category:  ${titleEl}, Elements: ${quantityOfItemsEl.length}`);
 });
